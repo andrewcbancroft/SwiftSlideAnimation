@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NqY-JX-UU6" userLabel="SlidingTextContainerView">
-                                <rect key="frame" x="204" y="103" width="193" height="60"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NqY-JX-UU6" userLabel="SlidingTextWrapperView">
+                                <rect key="frame" x="205" y="103" width="192" height="60"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Initial Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgL-0t-MWU" userLabel="SlidingTextLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="193" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="192" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" red="0.23961654969999999" green="0.1253480575" blue="0.027356561080000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
@@ -33,19 +33,19 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="2qc-gM-oEa"/>
                                     <constraint firstAttribute="centerX" secondItem="dgL-0t-MWU" secondAttribute="centerX" id="LAb-72-ISn"/>
                                     <constraint firstAttribute="height" secondItem="dgL-0t-MWU" secondAttribute="height" id="hdr-lQ-1j4"/>
                                     <constraint firstAttribute="width" secondItem="dgL-0t-MWU" secondAttribute="width" id="kEo-Fo-zYG"/>
-                                    <constraint firstAttribute="width" constant="193" id="vJx-uS-Nvf"/>
+                                    <constraint firstAttribute="height" constant="60" id="tKi-ig-jKq"/>
                                     <constraint firstAttribute="centerY" secondItem="dgL-0t-MWU" secondAttribute="centerY" id="wTX-qk-3Ch"/>
+                                    <constraint firstAttribute="width" constant="192" id="yAO-Ab-Sj0"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hye-dv-Sj1">
                                 <rect key="frame" x="231" y="303" width="139" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="139" id="9TF-AP-oVB"/>
-                                    <constraint firstAttribute="height" constant="42" id="ctK-Ud-wlX"/>
+                                    <constraint firstAttribute="height" constant="42" id="ctK-Ud-wlX" userLabel="Height - (42) - Start Sliding"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Start Sliding!">
