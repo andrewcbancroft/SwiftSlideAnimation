@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftSlideAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +15,58 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NqY-JX-UU6" userLabel="SlidingTextContainerView">
+                                <rect key="frame" x="204" y="103" width="193" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Initial Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgL-0t-MWU" userLabel="SlidingTextLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="193" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.23961654969999999" green="0.1253480575" blue="0.027356561080000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" red="0.95686280729999995" green="0.57647061349999995" blue="0.1215686351" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="106" y="53" width="109" height="21"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2qc-gM-oEa"/>
+                                    <constraint firstAttribute="centerX" secondItem="dgL-0t-MWU" secondAttribute="centerX" id="LAb-72-ISn"/>
+                                    <constraint firstAttribute="height" secondItem="dgL-0t-MWU" secondAttribute="height" id="hdr-lQ-1j4"/>
+                                    <constraint firstAttribute="width" secondItem="dgL-0t-MWU" secondAttribute="width" id="kEo-Fo-zYG"/>
+                                    <constraint firstAttribute="width" constant="193" id="vJx-uS-Nvf"/>
+                                    <constraint firstAttribute="centerY" secondItem="dgL-0t-MWU" secondAttribute="centerY" id="wTX-qk-3Ch"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hye-dv-Sj1">
+                                <rect key="frame" x="231" y="303" width="139" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="9TF-AP-oVB"/>
+                                    <constraint firstAttribute="height" constant="42" id="ctK-Ud-wlX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Start Sliding!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="slideTextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TvZ-rX-RgA"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="NqY-JX-UU6" secondAttribute="centerX" constant="-0.5" id="A7f-QR-Dsh"/>
+                            <constraint firstItem="NqY-JX-UU6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="83" id="dtK-w7-GSo"/>
+                            <constraint firstAttribute="centerX" secondItem="hye-dv-Sj1" secondAttribute="centerX" constant="-0.5" id="g3T-a3-il3"/>
+                            <constraint firstAttribute="centerY" secondItem="hye-dv-Sj1" secondAttribute="centerY" constant="-24" id="uee-dn-7FF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="slidingTextLabel" destination="dgL-0t-MWU" id="KSF-Pe-v1g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

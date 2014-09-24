@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		F2901D3A19D260B400A2408A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2901D3919D260B400A2408A /* AppDelegate.swift */; };
-		F2901D3C19D260B400A2408A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2901D3B19D260B400A2408A /* ViewController.swift */; };
 		F2901D3F19D260B400A2408A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2901D3D19D260B400A2408A /* Main.storyboard */; };
 		F2901D4119D260B400A2408A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2901D4019D260B400A2408A /* Images.xcassets */; };
 		F2901D4419D260B400A2408A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2901D4219D260B400A2408A /* LaunchScreen.xib */; };
 		F2901D5019D260B400A2408A /* SwiftSlideAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2901D4F19D260B400A2408A /* SwiftSlideAnimationTests.swift */; };
+		F2901D5B19D260E000A2408A /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2901D5919D260E000A2408A /* UIViewExtensions.swift */; };
+		F2901D5C19D260E000A2408A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2901D5A19D260E000A2408A /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		F2901D3419D260B400A2408A /* SwiftSlideAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSlideAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2901D3819D260B400A2408A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2901D3919D260B400A2408A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2901D3B19D260B400A2408A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F2901D3E19D260B400A2408A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2901D4019D260B400A2408A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F2901D4319D260B400A2408A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F2901D4919D260B400A2408A /* SwiftSlideAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSlideAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2901D4E19D260B400A2408A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2901D4F19D260B400A2408A /* SwiftSlideAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSlideAnimationTests.swift; sourceTree = "<group>"; };
+		F2901D5919D260E000A2408A /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtensions.swift; path = ../../SlideTextAnimation/SlideTextAnimation/UIViewExtensions.swift; sourceTree = "<group>"; };
+		F2901D5A19D260E000A2408A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../SlideTextAnimation/SlideTextAnimation/ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +79,10 @@
 		F2901D3619D260B400A2408A /* SwiftSlideAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				F2901D3919D260B400A2408A /* AppDelegate.swift */,
-				F2901D3B19D260B400A2408A /* ViewController.swift */,
 				F2901D3D19D260B400A2408A /* Main.storyboard */,
+				F2901D5919D260E000A2408A /* UIViewExtensions.swift */,
+				F2901D5A19D260E000A2408A /* ViewController.swift */,
+				F2901D3919D260B400A2408A /* AppDelegate.swift */,
 				F2901D4019D260B400A2408A /* Images.xcassets */,
 				F2901D4219D260B400A2408A /* LaunchScreen.xib */,
 				F2901D3719D260B400A2408A /* Supporting Files */,
@@ -212,7 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2901D3C19D260B400A2408A /* ViewController.swift in Sources */,
+				F2901D5B19D260E000A2408A /* UIViewExtensions.swift in Sources */,
+				F2901D5C19D260E000A2408A /* ViewController.swift in Sources */,
 				F2901D3A19D260B400A2408A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
