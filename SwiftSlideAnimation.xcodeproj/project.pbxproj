@@ -12,8 +12,8 @@
 		F2901D4119D260B400A2408A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2901D4019D260B400A2408A /* Images.xcassets */; };
 		F2901D4419D260B400A2408A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2901D4219D260B400A2408A /* LaunchScreen.xib */; };
 		F2901D5019D260B400A2408A /* SwiftSlideAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2901D4F19D260B400A2408A /* SwiftSlideAnimationTests.swift */; };
-		F2901D5B19D260E000A2408A /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2901D5919D260E000A2408A /* UIViewExtensions.swift */; };
-		F2901D5C19D260E000A2408A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2901D5A19D260E000A2408A /* ViewController.swift */; };
+		F2901D5F19D4945D00A2408A /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2901D5D19D4945D00A2408A /* UIViewExtensions.swift */; };
+		F2901D6019D4945D00A2408A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2901D5E19D4945D00A2408A /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,8 @@
 		F2901D4919D260B400A2408A /* SwiftSlideAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSlideAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2901D4E19D260B400A2408A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2901D4F19D260B400A2408A /* SwiftSlideAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSlideAnimationTests.swift; sourceTree = "<group>"; };
-		F2901D5919D260E000A2408A /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtensions.swift; path = ../../SlideTextAnimation/SlideTextAnimation/UIViewExtensions.swift; sourceTree = "<group>"; };
-		F2901D5A19D260E000A2408A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../SlideTextAnimation/SlideTextAnimation/ViewController.swift; sourceTree = "<group>"; };
+		F2901D5D19D4945D00A2408A /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		F2901D5E19D4945D00A2408A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				F2901D3D19D260B400A2408A /* Main.storyboard */,
-				F2901D5919D260E000A2408A /* UIViewExtensions.swift */,
-				F2901D5A19D260E000A2408A /* ViewController.swift */,
+				F2901D5D19D4945D00A2408A /* UIViewExtensions.swift */,
+				F2901D5E19D4945D00A2408A /* ViewController.swift */,
 				F2901D3919D260B400A2408A /* AppDelegate.swift */,
 				F2901D4019D260B400A2408A /* Images.xcassets */,
 				F2901D4219D260B400A2408A /* LaunchScreen.xib */,
@@ -215,8 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2901D5B19D260E000A2408A /* UIViewExtensions.swift in Sources */,
-				F2901D5C19D260E000A2408A /* ViewController.swift in Sources */,
+				F2901D6019D4945D00A2408A /* ViewController.swift in Sources */,
+				F2901D5F19D4945D00A2408A /* UIViewExtensions.swift in Sources */,
 				F2901D3A19D260B400A2408A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +411,7 @@
 				F2901D5519D260B400A2408A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2901D5619D260B400A2408A /* Build configuration list for PBXNativeTarget "SwiftSlideAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +420,7 @@
 				F2901D5819D260B400A2408A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
