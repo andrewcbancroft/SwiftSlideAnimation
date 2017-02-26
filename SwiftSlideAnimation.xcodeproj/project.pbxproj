@@ -164,9 +164,12 @@
 				TargetAttributes = {
 					F2901D3319D260B400A2408A = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 3KG9M836XW;
+						LastSwiftMigration = 0820;
 					};
 					F2901D4819D260B400A2408A = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0820;
 						TestTargetID = F2901D3319D260B400A2408A;
 					};
 				};
@@ -342,9 +345,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3KG9M836XW;
 				INFOPLIST_FILE = SwiftSlideAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -352,9 +357,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3KG9M836XW;
 				INFOPLIST_FILE = SwiftSlideAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -373,6 +380,7 @@
 				INFOPLIST_FILE = SwiftSlideAnimationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftSlideAnimation.app/SwiftSlideAnimation";
 			};
 			name = Debug;
@@ -388,6 +396,7 @@
 				INFOPLIST_FILE = SwiftSlideAnimationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftSlideAnimation.app/SwiftSlideAnimation";
 			};
 			name = Release;

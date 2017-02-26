@@ -13,15 +13,15 @@ class ViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 
-	@IBAction func slideTextButtonTapped(sender: UIButton) {
+	@IBAction func slideTextButtonTapped(_ sender: UIButton) {
 		self.slidingTextLabel.slideInFromLeft()
 //		self.slidingTextLabel.slideInFromLeft(duration: 1.0, completionDelegate: self) // Use this line to specify a duration or completionDelegate
 		self.slidingTextLabel.text = "Sliding Text!"
 	}
 	
 	// This function is only called if you set a completionDelegate in your slideInFromLeft() call 
-	override func animationDidStop(anim: CAAnimation!, finished flag: Bool) {
-		println("Animation stopped")
+	func animationDidStop(_ anim: CAAnimation!, finished flag: Bool) {
+		print("Animation stopped")
 	}
 }
 
