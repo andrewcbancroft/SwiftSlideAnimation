@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CAAnimationDelegate {
 	@IBOutlet weak var slidingTextLabel: UILabel!
 
 	override func viewDidLoad() {
@@ -15,12 +15,12 @@ class ViewController: UIViewController {
 
 	@IBAction func slideTextButtonTapped(_ sender: UIButton) {
 		self.slidingTextLabel.slideInFromLeft()
-//		self.slidingTextLabel.slideInFromLeft(duration: 1.0, completionDelegate: self) // Use this line to specify a duration or completionDelegate
+//		self.slidingTextLabel.slideInFromLeft(3.0, completionDelegate: self) // Use this line to specify a duration or completionDelegate
 		self.slidingTextLabel.text = "Sliding Text!"
 	}
 	
 	// This function is only called if you set a completionDelegate in your slideInFromLeft() call 
-	func animationDidStop(_ anim: CAAnimation!, finished flag: Bool) {
+	func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
 		print("Animation stopped")
 	}
 }
